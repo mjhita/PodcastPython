@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+import scrapy
+from  ObtenPodcast.items import ObtenPodcastItem
+
+class PodcastSpider(scrapy.Spider):
+    name = 'Podcast'
+    allowed_domains = ['web']
+    #start_urls = ['http://www.rtve.es/']
+
+    def __init__(self, *args, **kwargs):
+        super(PodcastSpider, self).__init__(*args, **kwargs)
+        for i in range(1,11):
+            self.start_urls.append("http://www.rtve.es/alacarta/interno/contenttable.shtml?pbq=%i&orderCriteria=DESC&modl=TOC&locale=es&pageSize=15&ctx=1919" % i)
+
+    def parse(self, response):
+        
+        item = ObtenPodcastItem()
+        item['titulos'] = response.xpath('//*[@name="progname"]/a/text()').extract()
+        item['descripciones'] =response.xpath('//*[@class="detalle"]/text()').extract() 
+        item['fechas'] = response.xpath('//*[@class="fecha"]/text()').extract()
+        item['duraciones'] = response.xpath('//*[@class="col_dur"]/text()').extract()
+        item['links'] = response.xpath('//*[@class="col_tip"]//a/@href').extract()
+
+        for titulo in item['titulos']:
+            print titulo
+        for i in range(2):
+            print "======================================================="
+        for descripcion in item['descripciones']:
+            print descripcion
+        for i in range(2):
+            print "======================================================="
+        for fecha in item['fechas']:
+            print fecha
+        for i in range(2):
+            print "======================================================="
+
+        
+
