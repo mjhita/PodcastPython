@@ -46,6 +46,8 @@ class MySQLPodcastPipeline(object):
             # selec orde dec
             # select * from Podcasts order by fecha desc;
             query = 'SELECT fecha FROM Pdcasts WHERE fecha="{}";'
+            titulo = item['titulo'][0]
+            titulo = titulo[titulo.find("-")+2:titulo.rfind("-")-1]
             agno = int(item['fecha'][0][:4])
             mes = int(item['fecha'][0][5:7])
             dia = int(item['fecha'][0][8:10])
@@ -55,7 +57,7 @@ class MySQLPodcastPipeline(object):
             self.cursor.execute(query)
             if self.cursor.fetchone() is None:
                 query = 'INSERT INTO Podcasts (fecha,titulo,descripcion,duracion,link) VALUES'    
-                query += '("{:s}","{:s}","{:s}","{:s}","{:s}");'.format(strFecha, item['titulo'][0].encode('utf-8'),
+                query += '("{:s}","{:s}","{:s}","{:s}","{:s}");'.format(strFecha, titulo.encode('utf-8'),
                                                                     item['descripcion'][0].encode('utf-8'),
                                                                     item['duracion'][0].encode('utf-8'),
                                                                     item['link'][0].encode('utf-8'))
