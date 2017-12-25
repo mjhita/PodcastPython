@@ -43,9 +43,6 @@ class MySQLPodcastPipeline(object):
                 raise DropItem("Duplicate found.")
         """        
         try:
-            # selec orde dec
-            # select * from Podcasts order by fecha desc;
-            query = 'SELECT fecha FROM Pdcasts WHERE fecha="{}";'
             titulo = item['titulo'][0]
             titulo = titulo[titulo.find("-")+2:titulo.rfind("-")-1]
             agno = int(item['fecha'][0][:4])
