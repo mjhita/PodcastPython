@@ -14,7 +14,7 @@ CREATE TABLE Podcasts (
     descripcion VARCHAR(1000), 
     duracion    VARCHAR(10), 
     link        VARCHAR(100),
-    valoracion  TINYINT(3) DEFAULT NULL,
+    valoracion  TINYINT(3) DEFAULT 0,
     comentarios VARCHAR(200),
     descargado  CHAR(0) DEFAULT NULL, 
     PRIMARY KEY (fecha)
