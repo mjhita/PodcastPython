@@ -3,7 +3,6 @@
 ## CURSO Tratamiento de datos, juegos y programación gráfica en Python, 6ª edición
 
 ### Proyecto. 
--
 
 Carga en una base de datos los podcasts de un programa de radio y permite consultarlos a través de un GUI GTK. 
 
@@ -23,7 +22,7 @@ por ejemplo con:
 > $ scrapy crawl Podcast -s CLOSESPIDER_ITEMCOUNT=50
     
 Una vez creada y poblada la base de datos el programa PodcastsWindow.py nos ofrece una interfaz gráfica con una lista de los Podcasts en la que aparece su fecha de emisión, título y duración. Aparte permite valorar cada podcast y añadir comentarios.
-Otra funcionalidad ofrecida es la búsqueda de podcasts por fecha o que contengan determinada informaión en título, contenidos o comentarios.
+Otra funcionalidad ofrecida es la búsqueda de podcasts por fecha o que contengan determinada información en título, contenidos o comentarios.
 
 Como futuras mejoras queda pendiente:
 
