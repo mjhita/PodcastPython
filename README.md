@@ -28,5 +28,5 @@ Como futuras mejoras queda pendiente:
 
 > Contemplar más de un programa de radio, con un desplegable para eligirlo y una tabla en base de datos de programas con su identificador y nombre del programa. 
 
-> Opción de descargar los podcasts, por ejemplo seleccionados mediante la selección multiple. Permitiendo elegir destino e incorporar en la interfaz la posibilidad de reproducir directamente los podcasts descargados. Se pueden almacenar en carpetas anidadas por años y meses. Ademas puede Incorporar información en las etiquetas de titulo, artista, album... del archivo mp3, por medio de por ejemplo la clase EasyID3 de mutagen
+> Opción de descargar los podcasts, por ejemplo seleccionados mediante la selección multiple. Permitiendo elegir destino e incorporar en la interfaz la posibilidad de reproducir directamente los podcasts descargados. Se pueden almacenar en carpetas anidadas por años y meses. Ademas puede Incorporar información en las etiquetas de titulo, artista, album... del archivo mp3, usando por ejemplo la clase EasyID3 del módulo mutagen
 
