@@ -10,7 +10,7 @@
 # "Podcasts" de la base de datos MySQL "DBPodcasts"
 #
 #  El archivo DBPodcasts.sql define la estructura de la tabla de la
-#  base de datos y permite rearlas desde MySQL
+#  base de datos y permite crearla desde MySQL
 #
 #
 # Implementado por: Manuel Jesús Hita Jiménez - 2017
