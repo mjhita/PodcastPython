@@ -1,8 +1,8 @@
 # PodcastPython
 
-##CURSO Tratamiento de datos, juegos y programación gráfica en Python, 6ª edición
+## CURSO Tratamiento de datos, juegos y programación gráfica en Python, 6ª edición
 
-###Proyecto. 
+### Proyecto. 
 -
 
 Carga en una base de datos los podcasts de un programa de radio y permite consultarlos a través de un GUI GTK. 
@@ -26,6 +26,8 @@ Una vez creada y poblada la base de datos el programa PodcastsWindow.py nos ofre
 Otra funcionalidad ofrecida es la búsqueda de podcasts por fecha o que contengan determinada informaión en título, contenidos o comentarios.
 
 Como futuras mejoras queda pendiente:
+
 > Contemplar más de un programa de radio, con un desplegable para eligirlo y una tabla en base de datos de programas con su identificador y nombre del programa. 
+
 > Opción de descargar los podcasts, por ejemplo seleccionados mediante la selección multiple. Permitiendo elegir destino e incorporar en la interfaz la posibilidad de reproducir directamente los podcasts descargados. Se pueden almacenar en carpetas anidadas por años y meses. Ademas puede Incorporar información en las etiquetas de titulo, artista, album... del archivo mp3, por medio de por ejemplo la clase EasyID3 de mutagen
 
